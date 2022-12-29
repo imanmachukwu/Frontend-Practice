@@ -91,6 +91,7 @@ button {
     font-weight: 300;
     font-size: .8em;
     border: none;
+    cursor: pointer;
 }
 
 .video {
@@ -114,11 +115,16 @@ h2 {
     align-items: center;
 }
 
+.flexed {
+    display: flex;
+}
+
 .side-by-side {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    flex: auto;
     gap: 75px;
     margin: 50px auto;
 }
@@ -145,11 +151,68 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 .hero-explore {
     display: flex;
     flex-flow: column nowrap;
+    gap: 25px;
+}
+
+#brand-examples {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+.grid-txt {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+    height: fit-content;
+    width: 70%;
+    align-items: flex-start;
+    line-height: 2rem;
+}
+
+#sponsors-container {
+    width: 100%;
+    height: 60svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.not {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+#hundred {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+}
+
+.footer-link {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: .8em;
     gap: 25px;
 }
